@@ -53,7 +53,6 @@
     while ([vc isKindOfClass:[UITabBarController class]]) {
         vc = ((UITabBarController *)vc).selectedViewController;
     }
-    
     while ([vc isKindOfClass:[UINavigationController class]]) {
         vc = ((UINavigationController *)vc).visibleViewController;
     }
@@ -61,7 +60,6 @@
     while (vc.presentedViewController) {
         vc = vc.presentedViewController;
     }
-    
     return vc;
 }
 @end

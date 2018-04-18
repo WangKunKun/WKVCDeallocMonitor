@@ -7,7 +7,6 @@
 //
 
 #import "WKVCDeallocManger.h"
-#import "AppDelegate.h"
 #import "WKVCDeallocListVC.h"
 #import "WKVCLifeCircleRecordManager.h"
 #import "UIView+WKSnapImage.h"
@@ -245,9 +244,15 @@
 
 - (void)enterListVC
 {
-
-    AppDelegate * delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIViewController * vc = [delegate getVisableVC];
+    UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if (!vc) {
+        for (UIWindow * window in [UIApplication sharedApplication].windows) {
+            if (window.rootViewController) {
+                vc = window.rootViewController;
+                break;
+            }
+        }
+    }
 
     if (![vc isKindOfClass:NSClassFromString(@"WKVCDeallocListVC")]) {
         WKVCDeallocListVC * deallocListVC = [[WKVCDeallocListVC alloc] init];
