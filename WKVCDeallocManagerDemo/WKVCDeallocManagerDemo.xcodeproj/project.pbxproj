@@ -88,6 +88,7 @@
 		EA0079022087389E00F9E7CD /* WKLifeCircleRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKLifeCircleRecordCell.xib; sourceTree = "<group>"; };
 		EA0079032087389E00F9E7CD /* WKLifeCircleRecordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLifeCircleRecordListVC.h; sourceTree = "<group>"; };
 		EA0079042087389E00F9E7CD /* WKLifeCircleRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLifeCircleRecordCell.m; sourceTree = "<group>"; };
+		EA00791720873AC000F9E7CD /* WKVCDeallocMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocMonitor.h; sourceTree = "<group>"; };
 		EA6ECDC42068F0E200D37DF6 /* WKVCDeallocManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKVCDeallocManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6ECDC72068F0E200D37DF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA6ECDC82068F0E200D37DF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 				EA0078DF2087389E00F9E7CD /* Core */,
 				EA0078EE2087389E00F9E7CD /* PopView */,
 				EA0078F52087389E00F9E7CD /* View */,
+				EA00791720873AC000F9E7CD /* WKVCDeallocMonitor.h */,
 			);
 			path = VCDeallocMonitor;
 			sourceTree = "<group>";
