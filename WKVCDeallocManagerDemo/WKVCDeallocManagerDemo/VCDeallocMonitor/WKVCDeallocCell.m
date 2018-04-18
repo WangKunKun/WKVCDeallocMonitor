@@ -26,6 +26,7 @@
     self.dotView.backgroundColor = [UIColor redColor];
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgClick)];
     [self.IV addGestureRecognizer:tap];
+    self.IV.userInteractionEnabled = YES;
 }
 
 - (void)setModel:(WKDeallocModel *)model
