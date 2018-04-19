@@ -17,7 +17,7 @@
 
 - (instancetype)init
 {
-    self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, NAVIGATION_STATUS_HEIGHT )];
+    self = [super initWithFrame:CGRectMake(0, 0, WK_SCREEN_WIDTH, WK_NAVIGATION_STATUS_HEIGHT )];
     if (self) {
         [self addSubview:self.titleLabel];
         [self addSubview:self.leftBtn];
@@ -39,7 +39,7 @@
         [_rightBtn setTitleColor:[UIColor colorWithRed:252 / 255.0 green:100 / 255.0 blue:84 / 255.0 alpha:1] forState:UIControlStateNormal];
         [_rightBtn setTitleColor:[UIColor colorWithRed:252 / 255.0 green:100 / 255.0 blue:84 / 255.0 alpha:1] forState:UIControlStateSelected];
         [_rightBtn addTarget:self action:@selector(buttonClick:) forControlEvents:(UIControlEventTouchUpInside)];
-        _rightBtn.frame = CGRectMake(SCREEN_WIDTH - 100, 20, 100, 44);
+        _rightBtn.frame = CGRectMake(WK_SCREEN_WIDTH - 100, 20, 100, 44);
         _rightBtn.tag = 101;
     }
     return _rightBtn;
@@ -77,7 +77,7 @@
 - (UIView *)line
 {
     if (!_line) {
-        _line = [[UIView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 0.5)];
+        _line = [[UIView alloc] initWithFrame:CGRectMake(0, 64, WK_SCREEN_WIDTH, 0.5)];
         _line.backgroundColor = [UIColor colorWithRed:252 / 255.0 green:100 / 255.0 blue:84 / 255.0 alpha:1];
     }
     return _line;

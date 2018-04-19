@@ -255,9 +255,24 @@
     }
     if (vc) {
         vc = [self getVisableVCWithVC:vc];
-        if (![vc isKindOfClass:NSClassFromString(@"WKVCDeallocListVC")]) {
+        BOOL isExist = NO;
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            UINavigationController * nav = (UINavigationController *)vc;
+            for (UIViewController * tmp in nav.viewControllers) {
+                if ([tmp isKindOfClass:NSClassFromString(@"WKVCDeallocListVC")]) {
+                    isExist = YES;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            isExist = [vc isKindOfClass:NSClassFromString(@"WKVCDeallocListVC")];
+        }
+        if (!isExist) {
             WKVCDeallocListVC * deallocListVC = [[WKVCDeallocListVC alloc] init];
-            [vc presentViewController:deallocListVC animated:YES completion:nil];
+            UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:deallocListVC];
+            [vc presentViewController:nav animated:YES completion:nil];
         }
     }
 }
@@ -351,7 +366,7 @@
 {
     if (!_warnningView) {
         _warnningView = [UIView new];
-        _warnningView.frame = CGRectMake(0, NAVIGATION_STATUS_HEIGHT, 40, 40);
+        _warnningView.frame = CGRectMake(0, WK_NAVIGATION_STATUS_HEIGHT, 40, 40);
         _warnningView.layer.cornerRadius = 20;
         _warnningView.clipsToBounds = YES;
         _warnningView.userInteractionEnabled = YES;

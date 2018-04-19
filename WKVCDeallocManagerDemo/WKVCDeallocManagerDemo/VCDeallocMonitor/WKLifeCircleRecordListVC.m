@@ -48,15 +48,13 @@
 
 - (UITableView *)mainTableView{
     if(!_mainTableView){
-        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, self.nav.frame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT - self.nav.frame.size.height) style:UITableViewStylePlain];
+        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, self.nav.frame.size.height, WK_SCREEN_WIDTH, WK_SCREEN_HEIGHT - self.nav.frame.size.height) style:UITableViewStylePlain];
         _mainTableView.backgroundColor = [UIColor whiteColor];
         _mainTableView.delegate = self;
         _mainTableView.dataSource = self;
-        _mainTableView.rowHeight = UITableViewAutomaticDimension;
-        _mainTableView.estimatedRowHeight = 60;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_mainTableView registerNib:[UINib nibWithNibName:@"WKLifeCircleRecordCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:@"WKLifeCircleRecordCell"];
+        [_mainTableView registerClass:[WKLifeCircleRecordCell class] forCellReuseIdentifier:@"WKLifeCircleRecordCell"];
     }
     return _mainTableView;
 }
@@ -69,6 +67,11 @@
     WKLifeCircleRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WKLifeCircleRecordCell"];
     cell.model = self.datasource[indexPath.row];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 /*
 #pragma mark - Navigation

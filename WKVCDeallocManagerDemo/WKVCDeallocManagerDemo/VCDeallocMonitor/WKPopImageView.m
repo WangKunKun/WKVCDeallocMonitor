@@ -21,7 +21,7 @@
 {
     [super setInterFace];
     
-    self.contentView.frame = CGRectMake(20, 20, SCREEN_WIDTH - 40, SCREEN_HEIGHT - 40);
+    self.contentView.frame = CGRectMake(20, 20, WK_SCREEN_WIDTH - 40, WK_SCREEN_HEIGHT - 40);
     self.thisIV = [UIImageView new];
     [self.contentView addSubview:self.thisIV];
     self.thisIV.frame = self.contentView.bounds;

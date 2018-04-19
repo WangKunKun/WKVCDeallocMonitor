@@ -52,19 +52,21 @@
 
 - (UITableView *)mainTableView{
     if(!_mainTableView){
-        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_STATUS_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_STATUS_HEIGHT - 40) style:UITableViewStylePlain];
+        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, WK_NAVIGATION_STATUS_HEIGHT, WK_SCREEN_WIDTH, WK_SCREEN_HEIGHT - WK_NAVIGATION_STATUS_HEIGHT - 40) style:UITableViewStylePlain];
         _mainTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _mainTableView.delegate = self;
         _mainTableView.dataSource = self;
-        _mainTableView.rowHeight = UITableViewAutomaticDimension;
-        _mainTableView.estimatedRowHeight = 110;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_mainTableView registerNib:[UINib nibWithNibName:@"WKVCDeallocCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:@"WKVCDeallocCell"];
+        [_mainTableView registerClass:[WKVCDeallocCell class] forCellReuseIdentifier:@"WKVCDeallocCell"];
     }
     return _mainTableView;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 110;
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.datasource.count;
@@ -83,7 +85,13 @@
     if (model.releaseTime > 0) {
         WKLifeCircleRecordListVC * vc = [WKLifeCircleRecordListVC new];
         vc.model = model;
-        [self presentViewController:vc animated:YES completion:nil];
+        if (self.navigationController) {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else
+        {
+            [self presentViewController:vc animated:YES completion:nil];
+        }
     }
     else
     {
@@ -118,7 +126,7 @@
         [_bottomBtn setTitle:@"查看未释放的VC" forState:(UIControlStateSelected)];
         [_bottomBtn setBackgroundColor:[UIColor colorWithRed:252 / 255.0 green:100 / 255.0 blue:84 / 255.0 alpha:1]];
         [_bottomBtn addTarget:self action:@selector(changeModel:) forControlEvents:(UIControlEventTouchUpInside)];
-        _bottomBtn.frame = CGRectMake(0, SCREEN_HEIGHT - 40, SCREEN_WIDTH, 40);
+        _bottomBtn.frame = CGRectMake(0, WK_SCREEN_HEIGHT - 40, WK_SCREEN_WIDTH, 40);
     }
     return _bottomBtn;
 }
