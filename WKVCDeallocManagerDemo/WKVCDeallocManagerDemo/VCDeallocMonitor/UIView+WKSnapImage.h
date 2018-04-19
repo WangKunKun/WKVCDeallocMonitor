@@ -10,6 +10,6 @@
 
 @interface UIView (WKSnapImage)
 
-- (UIImage *)snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
+- (UIImage *)wk_snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
 
 @end

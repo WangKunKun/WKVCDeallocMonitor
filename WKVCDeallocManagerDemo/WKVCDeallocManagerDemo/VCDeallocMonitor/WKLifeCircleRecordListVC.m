@@ -9,7 +9,7 @@
 #import "WKLifeCircleRecordListVC.h"
 #import "WKVCLifeCircleRecordManager.h"
 #import "WKLifeCircleRecordCell.h"
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 @interface WKLifeCircleRecordListVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *mainTableView;
@@ -41,7 +41,7 @@
 {
     _model = model;
     self.nav.title = model.className;
-    self.datasource = [WKVCDeallocManger findRecordModelWithDeallocModel:model];
+    self.datasource = [WKVCDeallocManager findRecordModelWithDeallocModel:model];
     [self.mainTableView reloadData];
 
 }
@@ -56,7 +56,7 @@
         _mainTableView.estimatedRowHeight = 60;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_mainTableView registerNib:[UINib nibWithNibName:@"WKLifeCircleRecordCell" bundle:nil] forCellReuseIdentifier:@"WKLifeCircleRecordCell"];
+        [_mainTableView registerNib:[UINib nibWithNibName:@"WKLifeCircleRecordCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:@"WKLifeCircleRecordCell"];
     }
     return _mainTableView;
 }

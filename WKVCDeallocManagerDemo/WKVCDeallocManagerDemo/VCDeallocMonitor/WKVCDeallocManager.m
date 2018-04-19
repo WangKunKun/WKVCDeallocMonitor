@@ -6,7 +6,7 @@
 //  Copyright © 2018年 zymk. All rights reserved.
 //
 
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 #import "WKVCDeallocListVC.h"
 #import "WKVCLifeCircleRecordManager.h"
 #import "UIView+WKSnapImage.h"
@@ -43,11 +43,11 @@
     model.address = [NSString stringWithFormat:@"%p",object];
     if ([object isKindOfClass:[UIView class]])
     {
-        model.img = [((UIView *)object) snapshotImageAfterScreenUpdates:NO];
+        model.img = [((UIView *)object) wk_snapshotImageAfterScreenUpdates:NO];
     }
     else if ([object isKindOfClass:[UIViewController class]])
     {
-        model.img = [((UIViewController *)object).view snapshotImageAfterScreenUpdates:NO];
+        model.img = [((UIViewController *)object).view wk_snapshotImageAfterScreenUpdates:NO];
     }
     model.isNeedRelease = NO;
     return model;
@@ -80,7 +80,7 @@
 
 @end
 
-@interface WKVCDeallocManger ()
+@interface WKVCDeallocManager ()
 
 @property (nonatomic, strong) NSMutableArray <WKDeallocModel *> * models;
 @property (nonatomic, strong) NSMutableArray <WKDeallocModel *> * warnningModels;
@@ -92,14 +92,14 @@
 
 @end
 
-@implementation WKVCDeallocManger
+@implementation WKVCDeallocManager
 
 + (instancetype)sharedVCDeallocManager
 {
-    static WKVCDeallocManger * cm = nil;
+    static WKVCDeallocManager * cm = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        cm = [WKVCDeallocManger new];
+        cm = [WKVCDeallocManager new];
         cm.count = 0;
 #ifdef OPEN_Warnning
         cm.isWarnning = YES;
@@ -116,7 +116,7 @@
     if (!object) {
         return;
     }
-    WKVCDeallocManger * cm = [self sharedVCDeallocManager];
+    WKVCDeallocManager * cm = [self sharedVCDeallocManager];
     BOOL isExist = NO;
     for (WKDeallocModel * tmp in cm.models) {
         if ([tmp isEqual:object]) {
@@ -137,7 +137,7 @@
     if (!object) {
         return;
     }
-    WKVCDeallocManger * cm = [self sharedVCDeallocManager];
+    WKVCDeallocManager * cm = [self sharedVCDeallocManager];
     WKDeallocModel * needRemoveModel = nil;
     for (WKDeallocModel * tmp in cm.models) {
         if ([tmp isEqual:object]) {
@@ -161,7 +161,7 @@
     if (!object) {
         return;
     }
-    WKVCDeallocManger * cm = [self sharedVCDeallocManager];
+    WKVCDeallocManager * cm = [self sharedVCDeallocManager];
     WKDeallocModel * needRemoveModel  = nil;
     for (WKDeallocModel * tmp in cm.models) {
         if ([tmp isEqual:object]) {

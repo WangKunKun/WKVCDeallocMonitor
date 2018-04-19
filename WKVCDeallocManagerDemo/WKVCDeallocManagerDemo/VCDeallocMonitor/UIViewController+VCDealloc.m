@@ -9,7 +9,7 @@
 #import "UIViewController+VCDealloc.h"
 #import <objc/runtime.h>
 #import "NSObject+DealBlock.h"
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 #import "WKVCLifeCircleRecordManager.h"
 
 static void *WKVCDeallocHelperKey;
@@ -57,7 +57,7 @@ static void *WKVCDeallocHelperKey;
             if (objc_getAssociatedObject(self, &WKVCDeallocHelperKey) == nil) {
                 __unsafe_unretained typeof(self) weakSelf = self; // NOTE: need to be __unsafe_unretained because __weak var will be reset to nil in dealloc
                 id deallocHelper = [self addDealBlock:^{
-                    [WKVCDeallocManger removeWithObject:weakSelf];
+                    [WKVCDeallocManager removeWithObject:weakSelf];
                 }];
                 objc_setAssociatedObject(self, &WKVCDeallocHelperKey, deallocHelper, OBJC_ASSOCIATION_ASSIGN);
             }
@@ -75,7 +75,7 @@ static void *WKVCDeallocHelperKey;
 - (void)wk_viewDidAppear:(BOOL)animation
 {
     [WKVCLifeCircleRecordManager addRecordWithVC:self methodName:[NSString stringWithFormat:@"%s",__func__]];
-    [WKVCDeallocManger addWithObject:self];
+    [WKVCDeallocManager addWithObject:self];
     [self wk_viewDidAppear:animation];
 }
 
@@ -93,7 +93,7 @@ static void *WKVCDeallocHelperKey;
 
 - (void)wk_dismissViewControllerAnimated:(BOOL)animation completion:(void (^ __nullable)(void))completion
 {
-    [WKVCDeallocManger releaseWithObject:self];
+    [WKVCDeallocManager releaseWithObject:self];
     [self wk_dismissViewControllerAnimated:animation completion:completion];
 }
 

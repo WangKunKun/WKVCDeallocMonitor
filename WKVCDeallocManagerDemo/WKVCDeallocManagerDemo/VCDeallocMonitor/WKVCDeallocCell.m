@@ -7,7 +7,7 @@
 //
 
 #import "WKVCDeallocCell.h"
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 @interface WKVCDeallocCell ()
 @property (strong, nonatomic) IBOutlet UIImageView *IV;
 @property (strong, nonatomic) IBOutlet UILabel *classNameLabel;

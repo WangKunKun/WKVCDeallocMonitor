@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WKVCDeallocManagerDemo/VCDeallocMonitor/WKVCDeallocListVC.m"
-            timestampString = "545737335.1510921"
+            timestampString = "545800628.154498"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "-clickWithImg:"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,14 +41,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WKVCDeallocManagerDemo/VCDeallocMonitor/WKVCDeallocCell.m"
-            timestampString = "545737335.151157"
+            filePath = "WKVCDeallocManagerDemo/VCDeallocMonitor/WKVCDeallocManager.m"
+            timestampString = "545800673.7373019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-imgClick"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "-hideWarnning"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[WKVCDeallocManager hideWarnning]"
+                  moduleName = "WKVCDeallocManagerDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangkun/WKVCDeallocMonitor/WKVCDeallocManagerDemo/WKVCDeallocManagerDemo/VCDeallocMonitor/WKVCDeallocManager.m"
+                  timestampString = "545800673.9520431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[WKVCDeallocManager hideWarnning]_block_invoke"
+                  moduleName = "WKVCDeallocManagerDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangkun/WKVCDeallocMonitor/WKVCDeallocManagerDemo/WKVCDeallocManagerDemo/VCDeallocMonitor/WKVCDeallocManager.m"
+                  timestampString = "545800673.9547009"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

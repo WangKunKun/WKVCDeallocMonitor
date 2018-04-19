@@ -10,7 +10,7 @@
 
 @implementation UIView (WKSnapImage)
 
-- (UIImage *)snapshotImage
+- (UIImage *)wk_snapshotImage
 {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -19,10 +19,10 @@
     return snap;
 }
 
-- (UIImage *)snapshotImageAfterScreenUpdates:(BOOL)afterUpdates
+- (UIImage *)wk_snapshotImageAfterScreenUpdates:(BOOL)afterUpdates
 {
     if (![self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
-        return [self snapshotImage];
+        return [self wk_snapshotImage];
     }
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);
     [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:afterUpdates];

@@ -7,7 +7,7 @@
 //
 
 #import "UINavigationController+VCDealloc.h"
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 #import <objc/runtime.h>
 @implementation UINavigationController (VCDealloc)
 
@@ -32,7 +32,7 @@
 - (UIViewController *)wk_popViewControllerAnimated:(BOOL)animated
 {
     UIViewController * vc = [self wk_popViewControllerAnimated:animated];
-    [WKVCDeallocManger releaseWithObject:vc];
+    [WKVCDeallocManager releaseWithObject:vc];
     return vc;
 }
 
@@ -40,7 +40,7 @@
 {
     NSArray * vcs = [self wk_popToViewController:viewController animated:animated];
     for (UIViewController * vc in vcs) {
-        [WKVCDeallocManger releaseWithObject:vc];
+        [WKVCDeallocManager releaseWithObject:vc];
     }
     return vcs;
 }
@@ -49,7 +49,7 @@
 {
     NSArray * vcs = [self wk_popToRootViewControllerAnimated:animated];
     for (UIViewController * vc in vcs) {
-        [WKVCDeallocManger releaseWithObject:vc];
+        [WKVCDeallocManager releaseWithObject:vc];
     }
     return vcs;
 }

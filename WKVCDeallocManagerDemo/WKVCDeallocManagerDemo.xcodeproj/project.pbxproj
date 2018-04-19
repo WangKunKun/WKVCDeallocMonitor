@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA00793C20873EDC00F9E7CD /* WKBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00791B20873EDC00F9E7CD /* WKBaseVC.m */; };
-		EA00793D20873EDC00F9E7CD /* UIView+WKSnapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00791D20873EDC00F9E7CD /* UIView+WKSnapImage.m */; };
-		EA00793E20873EDC00F9E7CD /* WKVCDeallocCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00791E20873EDC00F9E7CD /* WKVCDeallocCell.m */; };
-		EA00793F20873EDC00F9E7CD /* WKVCLifeCircleRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00791F20873EDC00F9E7CD /* WKVCLifeCircleRecordManager.m */; };
-		EA00794020873EDC00F9E7CD /* WKVCDeallocManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792020873EDC00F9E7CD /* WKVCDeallocManger.m */; };
-		EA00794120873EDC00F9E7CD /* WKVCDeallocCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA00792120873EDC00F9E7CD /* WKVCDeallocCell.xib */; };
-		EA00794220873EDC00F9E7CD /* WKLifeCircleRecordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792220873EDC00F9E7CD /* WKLifeCircleRecordListVC.m */; };
-		EA00794320873EDC00F9E7CD /* KMDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792520873EDC00F9E7CD /* KMDeallocBlockExecutor.m */; };
-		EA00794420873EDC00F9E7CD /* NSObject+DealBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792920873EDC00F9E7CD /* NSObject+DealBlock.m */; };
-		EA00794520873EDC00F9E7CD /* WKPopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792C20873EDC00F9E7CD /* WKPopBaseView.m */; };
-		EA00794620873EDC00F9E7CD /* UINavigationController+VCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792D20873EDC00F9E7CD /* UINavigationController+VCDealloc.m */; };
-		EA00794720873EDC00F9E7CD /* WKNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00792F20873EDC00F9E7CD /* WKNavView.m */; };
-		EA00794820873EDC00F9E7CD /* WKVCDeallocListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00793320873EDC00F9E7CD /* WKVCDeallocListVC.m */; };
-		EA00794920873EDC00F9E7CD /* WKLifeCircleRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA00793420873EDC00F9E7CD /* WKLifeCircleRecordCell.xib */; };
-		EA00794A20873EDC00F9E7CD /* WKPopImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00793520873EDC00F9E7CD /* WKPopImageView.m */; };
-		EA00794B20873EDC00F9E7CD /* UIViewController+VCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00793820873EDC00F9E7CD /* UIViewController+VCDealloc.m */; };
-		EA00794C20873EDC00F9E7CD /* WKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00793920873EDC00F9E7CD /* WKBaseView.m */; };
-		EA00794D20873EDC00F9E7CD /* WKLifeCircleRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA00793A20873EDC00F9E7CD /* WKLifeCircleRecordCell.m */; };
+		EA3C21232088415900C42EAB /* WKLifeCircleRecordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21012088415800C42EAB /* WKLifeCircleRecordListVC.m */; };
+		EA3C21242088415900C42EAB /* WKNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21022088415800C42EAB /* WKNavView.m */; };
+		EA3C21252088415900C42EAB /* UIViewController+VCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21032088415800C42EAB /* UIViewController+VCDealloc.m */; };
+		EA3C21262088415900C42EAB /* WKVCDeallocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21062088415800C42EAB /* WKVCDeallocManager.m */; };
+		EA3C21272088415900C42EAB /* NSObject+DealBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21072088415800C42EAB /* NSObject+DealBlock.m */; };
+		EA3C21282088415900C42EAB /* WKBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C210D2088415800C42EAB /* WKBaseVC.m */; };
+		EA3C21292088415900C42EAB /* WKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C210F2088415800C42EAB /* WKBaseView.m */; };
+		EA3C212A2088415900C42EAB /* WKPopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21102088415800C42EAB /* WKPopBaseView.m */; };
+		EA3C212B2088415900C42EAB /* UIView+WKSnapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21122088415800C42EAB /* UIView+WKSnapImage.m */; };
+		EA3C212C2088415900C42EAB /* UINavigationController+VCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21142088415800C42EAB /* UINavigationController+VCDealloc.m */; };
+		EA3C212D2088415900C42EAB /* WKVCDeallocListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21152088415800C42EAB /* WKVCDeallocListVC.m */; };
+		EA3C212E2088415900C42EAB /* WKVCLifeCircleRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21182088415800C42EAB /* WKVCLifeCircleRecordManager.m */; };
+		EA3C212F2088415900C42EAB /* WKLifeCircleRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C211A2088415800C42EAB /* WKLifeCircleRecordCell.m */; };
+		EA3C21302088415900C42EAB /* WKPopImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C211B2088415800C42EAB /* WKPopImageView.m */; };
+		EA3C21312088415900C42EAB /* KMDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C211C2088415900C42EAB /* KMDeallocBlockExecutor.m */; };
+		EA3C21322088415900C42EAB /* WKVCDeallocCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3C211F2088415900C42EAB /* WKVCDeallocCell.m */; };
+		EA3C21332088415900C42EAB /* WKVCDeallocCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3C21202088415900C42EAB /* WKVCDeallocCell.xib */; };
+		EA3C21342088415900C42EAB /* WKLifeCircleRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3C21212088415900C42EAB /* WKLifeCircleRecordCell.xib */; };
 		EA6ECDC92068F0E200D37DF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6ECDC82068F0E200D37DF6 /* AppDelegate.m */; };
 		EA6ECDCC2068F0E200D37DF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6ECDCB2068F0E200D37DF6 /* ViewController.m */; };
 		EA6ECDCF2068F0E200D37DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6ECDCD2068F0E200D37DF6 /* Main.storyboard */; };
@@ -53,41 +53,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA00791920873EDC00F9E7CD /* WKNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKNavView.h; sourceTree = "<group>"; };
-		EA00791A20873EDC00F9E7CD /* UINavigationController+VCDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+VCDealloc.h"; sourceTree = "<group>"; };
-		EA00791B20873EDC00F9E7CD /* WKBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseVC.m; sourceTree = "<group>"; };
-		EA00791C20873EDC00F9E7CD /* WKPopBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopBaseView.h; sourceTree = "<group>"; };
-		EA00791D20873EDC00F9E7CD /* UIView+WKSnapImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKSnapImage.m"; sourceTree = "<group>"; };
-		EA00791E20873EDC00F9E7CD /* WKVCDeallocCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocCell.m; sourceTree = "<group>"; };
-		EA00791F20873EDC00F9E7CD /* WKVCLifeCircleRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCLifeCircleRecordManager.m; sourceTree = "<group>"; };
-		EA00792020873EDC00F9E7CD /* WKVCDeallocManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocManger.m; sourceTree = "<group>"; };
-		EA00792120873EDC00F9E7CD /* WKVCDeallocCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKVCDeallocCell.xib; sourceTree = "<group>"; };
-		EA00792220873EDC00F9E7CD /* WKLifeCircleRecordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLifeCircleRecordListVC.m; sourceTree = "<group>"; };
-		EA00792320873EDC00F9E7CD /* WKPopImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopImageView.h; sourceTree = "<group>"; };
-		EA00792420873EDC00F9E7CD /* WKVCDeallocListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocListVC.h; sourceTree = "<group>"; };
-		EA00792520873EDC00F9E7CD /* KMDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDeallocBlockExecutor.m; sourceTree = "<group>"; };
-		EA00792620873EDC00F9E7CD /* WKLifeCircleRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLifeCircleRecordCell.h; sourceTree = "<group>"; };
-		EA00792720873EDC00F9E7CD /* WKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseView.h; sourceTree = "<group>"; };
-		EA00792820873EDC00F9E7CD /* UIViewController+VCDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VCDealloc.h"; sourceTree = "<group>"; };
-		EA00792920873EDC00F9E7CD /* NSObject+DealBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DealBlock.m"; sourceTree = "<group>"; };
-		EA00792A20873EDC00F9E7CD /* UIView+WKSnapImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKSnapImage.h"; sourceTree = "<group>"; };
-		EA00792B20873EDC00F9E7CD /* WKBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseVC.h; sourceTree = "<group>"; };
-		EA00792C20873EDC00F9E7CD /* WKPopBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPopBaseView.m; sourceTree = "<group>"; };
-		EA00792D20873EDC00F9E7CD /* UINavigationController+VCDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+VCDealloc.m"; sourceTree = "<group>"; };
-		EA00792E20873EDC00F9E7CD /* WKHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHeader.h; sourceTree = "<group>"; };
-		EA00792F20873EDC00F9E7CD /* WKNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKNavView.m; sourceTree = "<group>"; };
-		EA00793020873EDC00F9E7CD /* WKVCDeallocManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocManger.h; sourceTree = "<group>"; };
-		EA00793120873EDC00F9E7CD /* WKVCLifeCircleRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCLifeCircleRecordManager.h; sourceTree = "<group>"; };
-		EA00793220873EDC00F9E7CD /* WKVCDeallocCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocCell.h; sourceTree = "<group>"; };
-		EA00793320873EDC00F9E7CD /* WKVCDeallocListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocListVC.m; sourceTree = "<group>"; };
-		EA00793420873EDC00F9E7CD /* WKLifeCircleRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKLifeCircleRecordCell.xib; sourceTree = "<group>"; };
-		EA00793520873EDC00F9E7CD /* WKPopImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPopImageView.m; sourceTree = "<group>"; };
-		EA00793620873EDC00F9E7CD /* WKLifeCircleRecordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLifeCircleRecordListVC.h; sourceTree = "<group>"; };
-		EA00793720873EDC00F9E7CD /* NSObject+DealBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DealBlock.h"; sourceTree = "<group>"; };
-		EA00793820873EDC00F9E7CD /* UIViewController+VCDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VCDealloc.m"; sourceTree = "<group>"; };
-		EA00793920873EDC00F9E7CD /* WKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseView.m; sourceTree = "<group>"; };
-		EA00793A20873EDC00F9E7CD /* WKLifeCircleRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLifeCircleRecordCell.m; sourceTree = "<group>"; };
-		EA00793B20873EDC00F9E7CD /* KMDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		EA3C21002088415800C42EAB /* WKVCDeallocManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocManager.h; sourceTree = "<group>"; };
+		EA3C21012088415800C42EAB /* WKLifeCircleRecordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLifeCircleRecordListVC.m; sourceTree = "<group>"; };
+		EA3C21022088415800C42EAB /* WKNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKNavView.m; sourceTree = "<group>"; };
+		EA3C21032088415800C42EAB /* UIViewController+VCDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VCDealloc.m"; sourceTree = "<group>"; };
+		EA3C21042088415800C42EAB /* WKVCLifeCircleRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCLifeCircleRecordManager.h; sourceTree = "<group>"; };
+		EA3C21052088415800C42EAB /* UINavigationController+VCDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+VCDealloc.h"; sourceTree = "<group>"; };
+		EA3C21062088415800C42EAB /* WKVCDeallocManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocManager.m; sourceTree = "<group>"; };
+		EA3C21072088415800C42EAB /* NSObject+DealBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DealBlock.m"; sourceTree = "<group>"; };
+		EA3C21082088415800C42EAB /* UIViewController+VCDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VCDealloc.h"; sourceTree = "<group>"; };
+		EA3C21092088415800C42EAB /* WKBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseVC.h; sourceTree = "<group>"; };
+		EA3C210A2088415800C42EAB /* WKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseView.h; sourceTree = "<group>"; };
+		EA3C210B2088415800C42EAB /* WKLifeCircleRecordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLifeCircleRecordListVC.h; sourceTree = "<group>"; };
+		EA3C210C2088415800C42EAB /* WKPopBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopBaseView.h; sourceTree = "<group>"; };
+		EA3C210D2088415800C42EAB /* WKBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseVC.m; sourceTree = "<group>"; };
+		EA3C210E2088415800C42EAB /* WKHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHeader.h; sourceTree = "<group>"; };
+		EA3C210F2088415800C42EAB /* WKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseView.m; sourceTree = "<group>"; };
+		EA3C21102088415800C42EAB /* WKPopBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPopBaseView.m; sourceTree = "<group>"; };
+		EA3C21112088415800C42EAB /* WKVCDeallocCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocCell.h; sourceTree = "<group>"; };
+		EA3C21122088415800C42EAB /* UIView+WKSnapImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKSnapImage.m"; sourceTree = "<group>"; };
+		EA3C21132088415800C42EAB /* WKVCDeallocListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVCDeallocListVC.h; sourceTree = "<group>"; };
+		EA3C21142088415800C42EAB /* UINavigationController+VCDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+VCDealloc.m"; sourceTree = "<group>"; };
+		EA3C21152088415800C42EAB /* WKVCDeallocListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocListVC.m; sourceTree = "<group>"; };
+		EA3C21162088415800C42EAB /* NSObject+DealBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DealBlock.h"; sourceTree = "<group>"; };
+		EA3C21172088415800C42EAB /* KMDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		EA3C21182088415800C42EAB /* WKVCLifeCircleRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCLifeCircleRecordManager.m; sourceTree = "<group>"; };
+		EA3C21192088415800C42EAB /* UIView+WKSnapImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKSnapImage.h"; sourceTree = "<group>"; };
+		EA3C211A2088415800C42EAB /* WKLifeCircleRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLifeCircleRecordCell.m; sourceTree = "<group>"; };
+		EA3C211B2088415800C42EAB /* WKPopImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPopImageView.m; sourceTree = "<group>"; };
+		EA3C211C2088415900C42EAB /* KMDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDeallocBlockExecutor.m; sourceTree = "<group>"; };
+		EA3C211D2088415900C42EAB /* WKPopImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopImageView.h; sourceTree = "<group>"; };
+		EA3C211E2088415900C42EAB /* WKLifeCircleRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLifeCircleRecordCell.h; sourceTree = "<group>"; };
+		EA3C211F2088415900C42EAB /* WKVCDeallocCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVCDeallocCell.m; sourceTree = "<group>"; };
+		EA3C21202088415900C42EAB /* WKVCDeallocCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKVCDeallocCell.xib; sourceTree = "<group>"; };
+		EA3C21212088415900C42EAB /* WKLifeCircleRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKLifeCircleRecordCell.xib; sourceTree = "<group>"; };
+		EA3C21222088415900C42EAB /* WKNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKNavView.h; sourceTree = "<group>"; };
 		EA6ECDC42068F0E200D37DF6 /* WKVCDeallocManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKVCDeallocManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6ECDC72068F0E200D37DF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA6ECDC82068F0E200D37DF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,41 +134,41 @@
 		EA00791820873EDC00F9E7CD /* VCDeallocMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				EA00791920873EDC00F9E7CD /* WKNavView.h */,
-				EA00791A20873EDC00F9E7CD /* UINavigationController+VCDealloc.h */,
-				EA00791B20873EDC00F9E7CD /* WKBaseVC.m */,
-				EA00791C20873EDC00F9E7CD /* WKPopBaseView.h */,
-				EA00791D20873EDC00F9E7CD /* UIView+WKSnapImage.m */,
-				EA00791E20873EDC00F9E7CD /* WKVCDeallocCell.m */,
-				EA00791F20873EDC00F9E7CD /* WKVCLifeCircleRecordManager.m */,
-				EA00792020873EDC00F9E7CD /* WKVCDeallocManger.m */,
-				EA00792120873EDC00F9E7CD /* WKVCDeallocCell.xib */,
-				EA00792220873EDC00F9E7CD /* WKLifeCircleRecordListVC.m */,
-				EA00792320873EDC00F9E7CD /* WKPopImageView.h */,
-				EA00792420873EDC00F9E7CD /* WKVCDeallocListVC.h */,
-				EA00792520873EDC00F9E7CD /* KMDeallocBlockExecutor.m */,
-				EA00792620873EDC00F9E7CD /* WKLifeCircleRecordCell.h */,
-				EA00792720873EDC00F9E7CD /* WKBaseView.h */,
-				EA00792820873EDC00F9E7CD /* UIViewController+VCDealloc.h */,
-				EA00792920873EDC00F9E7CD /* NSObject+DealBlock.m */,
-				EA00792A20873EDC00F9E7CD /* UIView+WKSnapImage.h */,
-				EA00792B20873EDC00F9E7CD /* WKBaseVC.h */,
-				EA00792C20873EDC00F9E7CD /* WKPopBaseView.m */,
-				EA00792D20873EDC00F9E7CD /* UINavigationController+VCDealloc.m */,
-				EA00792E20873EDC00F9E7CD /* WKHeader.h */,
-				EA00792F20873EDC00F9E7CD /* WKNavView.m */,
-				EA00793020873EDC00F9E7CD /* WKVCDeallocManger.h */,
-				EA00793120873EDC00F9E7CD /* WKVCLifeCircleRecordManager.h */,
-				EA00793220873EDC00F9E7CD /* WKVCDeallocCell.h */,
-				EA00793320873EDC00F9E7CD /* WKVCDeallocListVC.m */,
-				EA00793420873EDC00F9E7CD /* WKLifeCircleRecordCell.xib */,
-				EA00793520873EDC00F9E7CD /* WKPopImageView.m */,
-				EA00793620873EDC00F9E7CD /* WKLifeCircleRecordListVC.h */,
-				EA00793720873EDC00F9E7CD /* NSObject+DealBlock.h */,
-				EA00793820873EDC00F9E7CD /* UIViewController+VCDealloc.m */,
-				EA00793920873EDC00F9E7CD /* WKBaseView.m */,
-				EA00793A20873EDC00F9E7CD /* WKLifeCircleRecordCell.m */,
-				EA00793B20873EDC00F9E7CD /* KMDeallocBlockExecutor.h */,
+				EA3C21172088415800C42EAB /* KMDeallocBlockExecutor.h */,
+				EA3C211C2088415900C42EAB /* KMDeallocBlockExecutor.m */,
+				EA3C21162088415800C42EAB /* NSObject+DealBlock.h */,
+				EA3C21072088415800C42EAB /* NSObject+DealBlock.m */,
+				EA3C21052088415800C42EAB /* UINavigationController+VCDealloc.h */,
+				EA3C21142088415800C42EAB /* UINavigationController+VCDealloc.m */,
+				EA3C21192088415800C42EAB /* UIView+WKSnapImage.h */,
+				EA3C21122088415800C42EAB /* UIView+WKSnapImage.m */,
+				EA3C21082088415800C42EAB /* UIViewController+VCDealloc.h */,
+				EA3C21032088415800C42EAB /* UIViewController+VCDealloc.m */,
+				EA3C21092088415800C42EAB /* WKBaseVC.h */,
+				EA3C210D2088415800C42EAB /* WKBaseVC.m */,
+				EA3C210A2088415800C42EAB /* WKBaseView.h */,
+				EA3C210F2088415800C42EAB /* WKBaseView.m */,
+				EA3C210E2088415800C42EAB /* WKHeader.h */,
+				EA3C211E2088415900C42EAB /* WKLifeCircleRecordCell.h */,
+				EA3C211A2088415800C42EAB /* WKLifeCircleRecordCell.m */,
+				EA3C21212088415900C42EAB /* WKLifeCircleRecordCell.xib */,
+				EA3C210B2088415800C42EAB /* WKLifeCircleRecordListVC.h */,
+				EA3C21012088415800C42EAB /* WKLifeCircleRecordListVC.m */,
+				EA3C21222088415900C42EAB /* WKNavView.h */,
+				EA3C21022088415800C42EAB /* WKNavView.m */,
+				EA3C210C2088415800C42EAB /* WKPopBaseView.h */,
+				EA3C21102088415800C42EAB /* WKPopBaseView.m */,
+				EA3C211D2088415900C42EAB /* WKPopImageView.h */,
+				EA3C211B2088415800C42EAB /* WKPopImageView.m */,
+				EA3C21112088415800C42EAB /* WKVCDeallocCell.h */,
+				EA3C211F2088415900C42EAB /* WKVCDeallocCell.m */,
+				EA3C21202088415900C42EAB /* WKVCDeallocCell.xib */,
+				EA3C21132088415800C42EAB /* WKVCDeallocListVC.h */,
+				EA3C21152088415800C42EAB /* WKVCDeallocListVC.m */,
+				EA3C21002088415800C42EAB /* WKVCDeallocManager.h */,
+				EA3C21062088415800C42EAB /* WKVCDeallocManager.m */,
+				EA3C21042088415800C42EAB /* WKVCLifeCircleRecordManager.h */,
+				EA3C21182088415800C42EAB /* WKVCLifeCircleRecordManager.m */,
 			);
 			path = VCDeallocMonitor;
 			sourceTree = "<group>";
@@ -335,10 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6ECDD42068F0E200D37DF6 /* LaunchScreen.storyboard in Resources */,
-				EA00794920873EDC00F9E7CD /* WKLifeCircleRecordCell.xib in Resources */,
+				EA3C21342088415900C42EAB /* WKLifeCircleRecordCell.xib in Resources */,
 				EA6ECDD12068F0E200D37DF6 /* Assets.xcassets in Resources */,
 				EA6ECDCF2068F0E200D37DF6 /* Main.storyboard in Resources */,
-				EA00794120873EDC00F9E7CD /* WKVCDeallocCell.xib in Resources */,
+				EA3C21332088415900C42EAB /* WKVCDeallocCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,25 +363,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA00794B20873EDC00F9E7CD /* UIViewController+VCDealloc.m in Sources */,
-				EA00794620873EDC00F9E7CD /* UINavigationController+VCDealloc.m in Sources */,
+				EA3C21322088415900C42EAB /* WKVCDeallocCell.m in Sources */,
+				EA3C212E2088415900C42EAB /* WKVCLifeCircleRecordManager.m in Sources */,
+				EA3C212C2088415900C42EAB /* UINavigationController+VCDealloc.m in Sources */,
+				EA3C21262088415900C42EAB /* WKVCDeallocManager.m in Sources */,
+				EA3C212D2088415900C42EAB /* WKVCDeallocListVC.m in Sources */,
 				EA6ECDCC2068F0E200D37DF6 /* ViewController.m in Sources */,
+				EA3C21232088415900C42EAB /* WKLifeCircleRecordListVC.m in Sources */,
+				EA3C212F2088415900C42EAB /* WKLifeCircleRecordCell.m in Sources */,
+				EA3C21282088415900C42EAB /* WKBaseVC.m in Sources */,
+				EA3C21272088415900C42EAB /* NSObject+DealBlock.m in Sources */,
+				EA3C21312088415900C42EAB /* KMDeallocBlockExecutor.m in Sources */,
+				EA3C212A2088415900C42EAB /* WKPopBaseView.m in Sources */,
+				EA3C212B2088415900C42EAB /* UIView+WKSnapImage.m in Sources */,
+				EA3C21252088415900C42EAB /* UIViewController+VCDealloc.m in Sources */,
 				EA6ECDD72068F0E200D37DF6 /* main.m in Sources */,
-				EA00793F20873EDC00F9E7CD /* WKVCLifeCircleRecordManager.m in Sources */,
-				EA00794820873EDC00F9E7CD /* WKVCDeallocListVC.m in Sources */,
-				EA00793D20873EDC00F9E7CD /* UIView+WKSnapImage.m in Sources */,
+				EA3C21292088415900C42EAB /* WKBaseView.m in Sources */,
+				EA3C21302088415900C42EAB /* WKPopImageView.m in Sources */,
 				EA6ECDC92068F0E200D37DF6 /* AppDelegate.m in Sources */,
-				EA00794520873EDC00F9E7CD /* WKPopBaseView.m in Sources */,
-				EA00794320873EDC00F9E7CD /* KMDeallocBlockExecutor.m in Sources */,
-				EA00794720873EDC00F9E7CD /* WKNavView.m in Sources */,
-				EA00794A20873EDC00F9E7CD /* WKPopImageView.m in Sources */,
-				EA00794420873EDC00F9E7CD /* NSObject+DealBlock.m in Sources */,
-				EA00794C20873EDC00F9E7CD /* WKBaseView.m in Sources */,
-				EA00794D20873EDC00F9E7CD /* WKLifeCircleRecordCell.m in Sources */,
-				EA00793C20873EDC00F9E7CD /* WKBaseVC.m in Sources */,
-				EA00793E20873EDC00F9E7CD /* WKVCDeallocCell.m in Sources */,
-				EA00794020873EDC00F9E7CD /* WKVCDeallocManger.m in Sources */,
-				EA00794220873EDC00F9E7CD /* WKLifeCircleRecordListVC.m in Sources */,
+				EA3C21242088415900C42EAB /* WKNavView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

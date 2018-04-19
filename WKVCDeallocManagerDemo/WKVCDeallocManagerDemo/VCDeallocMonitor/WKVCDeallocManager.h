@@ -23,7 +23,7 @@
 
 @end
 
-@interface WKVCDeallocManger : NSObject
+@interface WKVCDeallocManager : NSObject
 @property (nonatomic, strong, readonly) NSMutableArray <WKDeallocModel *> * models;
 @property (nonatomic, strong, readonly) NSMutableArray <WKDeallocModel *> * warnningModels;
 @property (nonatomic, assign) BOOL isWarnning;

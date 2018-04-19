@@ -7,7 +7,7 @@
 //
 
 #import "WKVCDeallocListVC.h"
-#import "WKVCDeallocManger.h"
+#import "WKVCDeallocManager.h"
 #import "WKVCDeallocCell.h"
 #import "WKPopImageView.h"
 #import "WKLifeCircleRecordListVC.h"
@@ -27,13 +27,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.datasource = [WKVCDeallocManger sharedVCDeallocManager].warnningModels;
+    self.datasource = [WKVCDeallocManager sharedVCDeallocManager].warnningModels;
     
     [self.view addSubview:self.bottomBtn];
     [self.view addSubview:self.mainTableView];
     [self.mainTableView reloadData];
-    
-    BOOL isWarnning = [WKVCDeallocManger sharedVCDeallocManager].isWarnning;
+    BOOL isWarnning = [WKVCDeallocManager sharedVCDeallocManager].isWarnning;
     self.nav.detailTitle = isWarnning ? @"关闭警告" : @"开启警告";
     self.nav.title = @"未释放VC";
 
@@ -46,8 +45,8 @@
 
 - (void)detailItemClick
 {
-    BOOL isWarnning = ![WKVCDeallocManger sharedVCDeallocManager].isWarnning;
-    [WKVCDeallocManger sharedVCDeallocManager].isWarnning = isWarnning;
+    BOOL isWarnning = ![WKVCDeallocManager sharedVCDeallocManager].isWarnning;
+    [WKVCDeallocManager sharedVCDeallocManager].isWarnning = isWarnning;
     self.nav.detailTitle = isWarnning ? @"关闭警告" : @"开启警告";
 }
 
@@ -61,7 +60,7 @@
         _mainTableView.estimatedRowHeight = 110;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_mainTableView registerNib:[UINib nibWithNibName:@"WKVCDeallocCell" bundle:nil] forCellReuseIdentifier:@"WKVCDeallocCell"];
+        [_mainTableView registerNib:[UINib nibWithNibName:@"WKVCDeallocCell" bundle:[NSBundle bundleForClass:[self class]]] forCellReuseIdentifier:@"WKVCDeallocCell"];
     }
     return _mainTableView;
 }
@@ -130,7 +129,7 @@
 {
     sender.selected = !sender.selected;
     self.nav.title = sender.selected ? @"所有VC" : @"未释放VC";
-    self.datasource = sender.selected ? [WKVCDeallocManger sharedVCDeallocManager].models : [WKVCDeallocManger sharedVCDeallocManager].warnningModels;
+    self.datasource = sender.selected ? [WKVCDeallocManager sharedVCDeallocManager].models : [WKVCDeallocManager sharedVCDeallocManager].warnningModels;
     [self.datasource sortUsingComparator:^NSComparisonResult(WKDeallocModel  *_Nonnull obj1, WKDeallocModel * _Nonnull obj2) {
         return obj1.isNeedRelease < obj2.isNeedRelease;
     }];
