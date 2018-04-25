@@ -20,7 +20,7 @@ Xcode6.0+, iOS6.0+
 	
 ## 使用效果
 
-![gif.gif](https://upload-images.jianshu.io/upload_images/266791-7107ae186915fe55.gif?imageMogr2/auto-orient/strip)
+![gif.gif](gif.gif)
 
 
 ### 联系方式
