@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "WKVCDeallocMonitor" # 项目名称
-s.version      = "0.1.4"        # 版本号 与 你仓库的 标签号 对应
+s.version      = "0.1.6"        # 版本号 与 你仓库的 标签号 对应
 s.license      = "MIT"          # 开源证书
 s.summary      = "监听ViewController的Dealloc，实时获得当前程序中是否有未释放的viewcontroller" # 项目简介
 
