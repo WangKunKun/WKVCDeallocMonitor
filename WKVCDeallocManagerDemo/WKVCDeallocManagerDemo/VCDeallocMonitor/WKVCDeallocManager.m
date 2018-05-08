@@ -121,6 +121,11 @@
     for (WKDeallocModel * tmp in cm.models) {
         if ([tmp isEqual:object]) {
             isExist  = YES;
+            tmp.isNeedRelease = NO;
+            if ([cm.warnningModels containsObject:tmp]) {
+                [cm.warnningModels removeObject:tmp];
+                cm.count = cm.warnningModels.count;
+            }
             break;
         }
     }
