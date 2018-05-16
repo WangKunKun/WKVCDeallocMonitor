@@ -151,6 +151,12 @@
         }
     }
     if (needRemoveModel) {
+        if ([object isKindOfClass:[UIViewController class]]) {
+            UIViewController * vc = (UIViewController *)object;
+            for (UIViewController * tmp in vc.childViewControllers) {
+                [self removeWithObject:tmp];
+            }
+        }
         [cm.models removeObject:needRemoveModel];
         if ([cm.warnningModels containsObject:needRemoveModel]) {
             [cm.warnningModels removeObject:needRemoveModel];
@@ -177,6 +183,12 @@
     }
     
     if (needRemoveModel) {
+        if ([object isKindOfClass:[UIViewController class]]) {
+            UIViewController * vc = (UIViewController *)object;
+            for (UIViewController * tmp in vc.childViewControllers) {
+                [self releaseWithObject:tmp];
+            }
+        }
         needRemoveModel.releaseTime = [[NSDate date] timeIntervalSince1970];
         [cm.warnningModels addObject:needRemoveModel];
         cm.count = cm.warnningModels.count;
